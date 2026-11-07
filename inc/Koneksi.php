@@ -12,7 +12,9 @@ class Koneksi
     public function __construct()
     {
         try {
-            $this->koneksi = new \PDO("mysql:host=localhost;dbname=dbpbwl_praktikum2", "root", "root");
+            $this->koneksi = new \PDO("mysql:host=127.0.0.1;dbname=dbpbwl_project5;charset=utf8mb4",
+                "root",
+                "");
         } catch (\PDOException $e) {
             echo "Koneksi gagal: " . $e->getMessage();
         }
